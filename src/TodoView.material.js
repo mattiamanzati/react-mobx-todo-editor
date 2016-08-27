@@ -62,13 +62,13 @@ export class SingleTodoView extends React.Component{
 
         return <TableRow striped={todo.done} displayBorder={false}>
                     <TableRowColumn>
-                        <Checkbox checked={todo.done} onCheck={e => todo.done = e.target.checked} />
+                        <Checkbox checked={todo.done} onCheck={e => {todo.done = e.target.checked}} />
                     </TableRowColumn>
                     <TableRowColumn>
                         #{todo.id}
                     </TableRowColumn>
                     <TableRowColumn>
-                        <TextField type="text" value={todo.text} onChange={e => todo.text = e.target.value} fullWidth={true} />
+                        <TextField name="text" type="text" value={todo.text} onChange={e => {todo.text = e.target.value}} fullWidth={true} />
                     </TableRowColumn>
                     <TableRowColumn>
                         <RaisedButton onClick={() => model.remove(todo)} label="Delete" />

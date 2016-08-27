@@ -43,8 +43,8 @@ export class SingleTodoView extends React.Component{
                     
                     <br/>
 
-                    <input type="checkbox" checked={todo.done} onChange={e => todo.done = e.target.checked} />
-                    <input type="text" value={todo.text} onChange={e => todo.text = e.target.value} />
+                    <input type="checkbox" checked={todo.done} onChange={e => {todo.done = e.target.checked}} />
+                    <input type="text" value={todo.text} onChange={e => {todo.text = e.target.value}} />
                     <button onClick={() => model.remove(todo)}>Delete</button>
                 </p>
     }
