@@ -2,7 +2,7 @@
   "name": "react-mobx-todo-editor",
   "version": "0.0.1",
   "private": true,
-  "homepage": "http://mattiamanzati.github.io/react-mobx-todo-editor",
+  "homepage": "http://mattiamanzati.github.io/react-mobx-todo-editor/build",
   "devDependencies": {
     "autoprefixer": "6.4.0",
     "babel-core": "6.14.0",
