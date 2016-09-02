@@ -25,7 +25,7 @@ export class TodoViewModel{
 
     // remove and deletes the given todo
     @action
-    remove(todo: Todo){
+    remove(todo){
         const index = this.todos.indexOf(todo)
         if(index > -1){
             this.todos.splice(index, 1)
